@@ -1,4 +1,11 @@
 body {
-  background-color: white;
-  color: orange;
+  color: green;
+}
+
+$mainBlue: #2f5572;
+
+.large-hero {
+  h2 {
+    color: $mainBlue;
+  }
 }
