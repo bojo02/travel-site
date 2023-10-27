@@ -1,11 +1,21 @@
-body {
-  color: green;
-}
+@import "normalize.css";
 
-$mainBlue: #2f5572;
+@import "base/_mixins";
 
-.large-hero {
-  h2 {
-    color: $mainBlue;
-  }
-}
+@import "modules/_row";
+
+@import "modules/_generic-content-container";
+
+@import "modules/_variables";
+
+@import "modules/_page-section";
+
+@import "modules/_headline";
+
+@import "modules/_wrapper";
+
+@import "base/_global";
+
+@import "modules/_large-hero";
+
+@import "modules/_btn";
