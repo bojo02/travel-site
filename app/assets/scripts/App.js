@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 
-import MobileMenu from "../scripts/modules/MobileMenu";
+import MobileMenu from "./modules/MobileMenu";
 
 let mobileMenu = new MobileMenu();
 
