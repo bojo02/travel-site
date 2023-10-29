@@ -1,5 +1,8 @@
 .primary-nav {
   &__pull-right {
-    float: right;
+    text-align: center;
+    @mixin atMedium {
+      float: right;
+    }
   }
 }
