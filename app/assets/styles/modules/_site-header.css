@@ -2,8 +2,17 @@
   position: absolute;
   z-index: 2;
 
+  .is-current-link {
+    color: yellow;
+  }
+
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, 0.3);
+
+    &--darker {
+      background-color: rgba(23, 51, 72, 0.85);
+    }
   }
 
   &__menu-content {
@@ -48,6 +57,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    transition: transform 0.3s ease-out;
     background-color: $mainBlue;
     padding: 0.5rem 2rem;
     top: 0;
@@ -56,6 +66,10 @@
       left: auto;
       transform: translateX(0);
       padding: 1rem 2rem;
+      .site-header--darker & {
+        transform: scale(0.5);
+        top: -17px;
+      }
     }
   }
 
